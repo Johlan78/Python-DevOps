@@ -1,6 +1,6 @@
-on:
-  push:
-    - main
+workflow:
+  auto_cancel:
+    on_new_commit: interruptible
 
 stages:          # List of stages for jobs, and their order of execution
   - build
